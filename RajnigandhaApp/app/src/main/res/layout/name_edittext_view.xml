@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
+
+    <TextView
+        android:id="@+id/name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name_view_edittext"
+        android:layout_alignBottom="@+id/name_view_edittext"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/name"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/name_view_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:paddingStart="55dp"
+        android:textColorHint="@color/white"
+        app:backgroundTint="@color/white"
+        tools:ignore="RtlSymmetry"
+        android:inputType="textPersonName">
+
+        <requestFocus />
+    </EditText>
+</RelativeLayout>

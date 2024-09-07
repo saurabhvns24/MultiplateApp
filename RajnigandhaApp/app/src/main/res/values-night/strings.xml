@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="email_id_mobile_no">Email Id/Mobile No</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="t_amp_c"><![CDATA[T & C]]></string>
+    <string name="by_logging_in_you_agree_to_our">By Logging in you agree to our</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="name">Name:</string>
+    <string name="mobile_no">Mobile No:</string>
+    <string name="sign_up">sign up</string>
+    <string name="sign_in">sign in</string>
+    <string name="log_in">Log In</string>
+    <string name="city">City</string>
+    <string name="requestTimeOutError">Server error</string>
+    <string name="responseMalformedJson">Json is not right</string>
+    <string name="networkError">network issue</string>
+    <string name="unknownError">unknown error</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="state">State</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/state_spinner_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/state_spinner"
+        android:layout_alignBottom="@+id/state_spinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/location_view"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/state_spinner"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        app:backgroundTint="@color/white"
+        android:background="@drawable/test"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/state_spinner"
+        android:layout_alignBottom="@+id/state_spinner"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/drop"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>
