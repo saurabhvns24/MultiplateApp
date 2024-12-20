@@ -41,15 +41,6 @@ class MainActivity : ComponentActivity() {
 fun Greeting(name: String) {
     val navController = rememberNavController()
     MovieNavigation(navController)
-//    val show = remember {
-//        mutableStateOf(false)
-//    }
-//    Button(onClick = { show.value = !show.value}) {
-//        Text(text = "Please click here")
-//    }
-//    if (show.value){
-//        MovieListScreen()
-//    }
 }
 
 @Preview(showBackground = true)

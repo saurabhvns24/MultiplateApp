@@ -21,17 +21,19 @@ class MovieViewModel @Inject constructor(private val movieRepository: MovieRepos
         getMovieList()
     }
 
-    fun getMovieList() = viewModelScope.launch(Dispatchers.IO) {
-        val result = movieRepository.getMovieList()
-        when (result) {
+    private fun getMovieList() = viewModelScope.launch(Dispatchers.IO) {
+        when (val result = movieRepository.getMovieList()) {
             is Resource.Loading -> {
             }
+
             is Resource.Success -> {
                 movieList.value = MovieStateHolder(data = result.data)
             }
+
             is Resource.Error -> {
                 movieList.value = MovieStateHolder(error = result.message.toString())
             }
+
             else -> {}
         }
     }

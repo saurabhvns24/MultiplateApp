@@ -28,9 +28,8 @@ class MovieDetailViewModel @Inject constructor(
         }
     }
 
-    fun getMovieDetail(id: String) = viewModelScope.launch {
-        val result = movieRepository.getMovieDetails(id)
-        when (result) {
+    private fun getMovieDetail(id: String) = viewModelScope.launch {
+        when (val result = movieRepository.getMovieDetails(id)) {
             is Resource.Error -> {
                 movieDetail.value = MovieDetailStateHolder(error = result.message.toString())
             }
